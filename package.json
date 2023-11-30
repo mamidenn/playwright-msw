@@ -23,7 +23,7 @@
   "scripts": {
     "build": "tsc",
     "clean": "rimraf lib",
-    "prepack": "yarn clean && yarn build",
+    "prepack": "rimraf lib && tsc",
     "test": "jest",
     "typecheck": "tsc --noEmit"
   },
